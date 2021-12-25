@@ -34,15 +34,18 @@ body {
     font-size: 18px;
     color: #e5e7eb;
     justify-content: space-between;
+    align-items: baseline;
     padding-right: 12px;
     margin-bottom: 56px;
 }
 
-.linklist { display: flex;}
+.linklist { 
+    display: flex;
+}
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #e5e7eb;
 }
 
 ul {
@@ -50,10 +53,13 @@ ul {
     display: flex;
     margin: 0px;
     padding: 0px;
-    gap: 16px;
+    justify-content: space-around;
     font-weight: 300;
 }
 
+li {
+    margin: 0px 0px 0px 16px;
+}
 
 .headerLogo {
     font-size: 24px;
@@ -64,6 +70,7 @@ ul {
     display: flex;
     justify-content: center;
     gap: 48px;
+    margin-bottom: 36px;
 }
 
 .heroText {
@@ -90,7 +97,7 @@ ul {
     background-color: #e5e7eb;
     color: #1F2937;
     min-width: 500px;
-    min-height: 225px;
+    min-height: 250px;
     margin: 16px;
     flex: 1 1 1;
     justify-content: center;
@@ -103,13 +110,14 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 0px 75px;
 }
 
 .rinfoTitle {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
-    margin: 24px;
+    margin: 36px 24px 24px;
 }
 
 .rinfoHolder {
@@ -124,6 +132,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 16px 0px 16px;
 }
 
 .rinfoBox {
@@ -143,17 +152,18 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 150px;
+    max-width: 175px;
 }
 
 /* block quote elements */
 
 .quoteBlock {
     background-color: #e5e7eb;
+    margin: 24px 0px 0px 0px;
 }
 
 .quote {
-    margin: 48px;
+    margin: 75px 250px;
 }
 
 .quoteText {
@@ -163,6 +173,8 @@ ul {
     font-size: 36px;
     font-weight: 200;
     font-style: italic;
+    color: #1f2937;
+    margin-bottom: 24px;
 }
 
 .quoteAttribution {
@@ -170,10 +182,49 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
 }
 
 /* call to action elements */
 
 .callToAction {
     display: flex;
+    align-self: center;
+    background-color: #3882f6;
+    border-radius: 8px;
+    margin: 100px 48px;
+    min-height: 100px;
+    min-width: 800px;
+    flex:  1 1 1;
+    justify-content: space-evenly;
+    padding: 20px 36px;
+}
+
+.ctaTitle {
+    font-size: 20px;
+    color: #f9faf8;
+}
+
+.ctaText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctaSubtext {
+    color: #e5e7eb;
+    font-size: ;
+}
+
+.cta {
+    border: 2px solid #f9faf8;
+    align-self: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #f9faf8;
+    padding: 36px;
 }
